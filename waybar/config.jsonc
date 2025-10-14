@@ -28,10 +28,12 @@
 	"group/motherboard",
 	"custom/separator#blank",
 	"group/laptop",
-	"custom/separator#blank", 
+	"custom/separator#blank",
 	"group/audio",
 	"custom/separator#blank",
-	"custom/power",					
+	"idle_inhibitor",
+	"custom/updater",
+	"custom/power",
 	],
 
 

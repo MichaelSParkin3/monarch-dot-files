@@ -138,17 +138,17 @@
     "modules": [
       "cpu",
       "memory",
-      "temperature",
-      "disk",
-      ]	
+      ]
 },
   
 "group/laptop": {
     "orientation": "horizontal",
     "modules": [
       "backlight",
+      "network",
+      "bluetooth",
       "battery",
-      ]	
+      ]
 },
   
 "group/audio": {
@@ -192,8 +192,8 @@
       "critical": 15
              },
     "format": "{icon} {capacity}%",
-    "format-charging": "{capacity}%",
-    "format-plugged": "󱘖 {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
 	"format-alt-click": "click",
     "format-full": "{icon} Full",
     "format-alt": "{icon} {time}",
@@ -244,11 +244,10 @@
 },
    
 "cpu": {
-    "format": "{usage}% 󰍛",  
+    "format": "󰍛",
     "interval": 1,
-    "format-alt-click": "click",
-    "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "tooltip": true,
+    "tooltip-format": "CPU: {usage}%",
     "on-click": "alacritty --class=btop -e btop",
 },
     
@@ -312,11 +311,9 @@
     
 "memory": {
     "interval": 10,
-    "format": "{used:0.1f}G 󰾆",
-    "format-alt": "{percentage}% 󰾆",
-    "format-alt-click": "click",
+    "format": "󰾆",
     "tooltip": true,
-    "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
+    "tooltip-format": "RAM: {used:0.1f}GB / {total:0.1f}GB ({percentage}%)",
     "on-click": "alacritty --class=btop -e btop"
 },
 
@@ -499,13 +496,6 @@
     "interval" : 86400, // once every day
     "tooltip": true,
 },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click": "sleep 0.1 && swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true,
-},
     
 // NOTE:! This is only for Arch and Arch Based Distros  
 "custom/updater":{
@@ -513,7 +503,7 @@
     "exec": "checkupdates | wc -l",
     "exec-if": "[[ $(checkupdates | wc -l) ]]",
     "interval": 15,
-    "on-click": "kitty -T update paru -Syu || yay -Syu && notify-send 'The system has been updated'",
+    "on-click": "alacritty --title update --hold -e bash -c \"paru -Syu || yay -Syu\"; notify-send \"System Updated\"",
 },
     
 "custom/weather": {
