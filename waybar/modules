@@ -192,10 +192,10 @@
       "critical": 15
              },
     "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format-charging": "󰢝 {capacity}%",
+    "format-plugged": "󰚥 {capacity}%",
 	"format-alt-click": "click",
-    "format-full": "{icon} Full",
+    "format-full": "󰂅 {capacity}%",
     "format-alt": "{icon} {time}",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "format-time": "{H}h {M}min",
@@ -358,7 +358,8 @@
     "tooltip-format-ethernet": "{ifname} 󰌘",
     "tooltip-format-disconnected": "󰌙 Disconnected",
     "max-length": 50,
-    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "on-click": "alacritty --class=Impala -e impala"
 },
   
 "network#speed": {
@@ -392,7 +393,7 @@
     },
     "scroll-step": 5.0,
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-    "on-click": "omarchy-launch-or-focus Wiremix 'alacritty --class=Wiremix -e wiremix'",
+    "on-click": "omarchy-launch-or-focus Wiremix 'alacritty --class=Wiremix -e wiremix -v output'",
     "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
     "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-",
 	"tooltip-format": "{icon} {desc} | {volume}%",
@@ -404,7 +405,7 @@
     "format-source": " {volume}%",
     "format-source-muted": "",
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
-    "on-click": "sh -c 'pavucontrol -t 4 || pavucontrol || true'",
+    "on-click": "omarchy-launch-or-focus Wiremix-Input 'alacritty --class=Wiremix-Input -e wiremix -v input'",
     "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SOURCE@ 5%+",
     "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SOURCE@ 5%-",
 	"tooltip-format": "{source_desc} | {source_volume}%",
