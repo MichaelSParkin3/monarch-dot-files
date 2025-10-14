@@ -315,3 +315,8 @@ window#waybar.hidden {
 	min-width: 10px;
 	border-radius: 5px;
 }
+/* icon-only spacing for common modules */
+#pulseaudio, #pulseaudio-slider, #battery, #cpu, #memory, #disk, #network, #temperature, #mpris {
+  padding-left: 6px;
+  padding-right: 6px;
+}

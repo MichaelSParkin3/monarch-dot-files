@@ -11,9 +11,7 @@
 "margin-top": 2,
 	
 "modules-left": [
-	"custom/weather",
-	"custom/separator#blank",
-	"clock",
+		"clock",
 	"custom/separator#blank",
 	"hyprland/window"
 ],
@@ -42,7 +40,7 @@
 "custom/power": {
 	"format": " ",
 	"icon-size": 20,
-  "on-click": "wlogout -C $HOME/.config/wlogout/nova.css -l $HOME/.config/wlogout/layout -b 5 -B 400 -T 400",
+  "on-click": "omarchy-menu system",
 	"tooltip": false,
 },
 	

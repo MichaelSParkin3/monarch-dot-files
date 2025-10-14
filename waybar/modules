@@ -173,8 +173,8 @@
     "on-click-middle": "",
     "on-click-right": "",
     "on-update": "",
-    "on-scroll-up": "~/.config/hypr/scripts/Brightness.sh --inc",
-    "on-scroll-down": "~/.config/hypr/scripts/Brightness.sh --dec",
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-",
     "smooth-scrolling-threshold": 1,
 },
       
@@ -201,7 +201,7 @@
     "format-time": "{H}h {M}min",
     "tooltip": true,
     "tooltip-format": "{timeTo} {power}w",
-    "on-click-right": "~/.config/hypr/scripts/wlogout.sh",
+    "on-click": "omarchy-menu power",
 },
       
 "bluetooth": {
@@ -212,7 +212,7 @@
     "tooltip-format-connected": "{device_enumerate}",
     "tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
     "tooltip": true,
-    "on-click": "blueman-manager",
+    "on-click": "blueberry",
 },
      
 "clock": {
@@ -249,7 +249,7 @@
     "format-alt-click": "click",
     "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-    "on-click": "gnome-system-monitor",
+    "on-click": "alacritty --class=btop -e btop",
 },
     
 "disk": {
@@ -317,7 +317,7 @@
     "format-alt-click": "click",
     "tooltip": true,
     "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
-    "on-click": "kitty --title btop sh -c 'btop'"
+    "on-click": "alacritty --class=btop -e btop"
 },
 
 "mpris": {
@@ -328,8 +328,8 @@
     "on-click": "playerctl previous",
     "on-click-right": "playerctl next",
     "scroll-step": 5.0,
-    "on-scroll-up": "~/.config/hypr/scripts/volume_control.sh --inc",
-    "on-scroll-down": "~/.config/hypr/scripts/volume_control.sh --dec",
+    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-",
     "smooth-scrolling-threshold": 1,
 	"player-icons": {
         "chromium": "",
@@ -394,10 +394,10 @@
     "ignored-sinks": ["Easy Effects Sink"],
     },
     "scroll-step": 5.0,
-    "on-click-right": "~/.config/hypr/scripts/volume_control.sh --toggle",
-    "on-click": "pavucontrol -t 3",
-    "on-scroll-up": "~/.config/hypr/scripts/volume_control.sh --inc",
-    "on-scroll-down": "~/.config/hypr/scripts/volume_control.sh --dec",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click": "omarchy-launch-or-focus Wiremix 'alacritty --class=Wiremix -e wiremix'",
+    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-",
 	"tooltip-format": "{icon} {desc} | {volume}%",
     "smooth-scrolling-threshold": 1,
 },
@@ -406,10 +406,10 @@
     "format": "{format_source}",
     "format-source": " {volume}%",
     "format-source-muted": "",
-    "on-click-right": "~/.config/hypr/scripts/volume_control.sh --toggle-mic",
-    "on-click": "pavucontrol -t 4",
-    "on-scroll-up": "~/.config/hypr/scripts/volume_control.sh --mic-inc",
-    "on-scroll-down": "~/.config/hypr/scripts/volume_control.sh --mic-dec",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+    "on-click": "sh -c 'pavucontrol -t 4 || pavucontrol || true'",
+    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SOURCE@ 5%+",
+    "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SOURCE@ 5%-",
 	"tooltip-format": "{source_desc} | {source_volume}%",
     "scroll-step": 5,
 },
@@ -423,7 +423,7 @@
     "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}°C {icon}",
     "format-icons": ["󰈸"],
-    "on-click": "kitty --title nvtop sh -c 'nvtop'"
+    "on-click": "alacritty --class=nvtop -e nvtop"
 },
       
 "tray": {
@@ -434,10 +434,10 @@
 "wireplumber": {
     "format": "{icon} {volume} %",
     "format-muted": " Mute",
-    "on-click-right": "~/.config/hypr/scripts/volume_control.sh --toggle",
-    "on-click": "pavucontrol -t 3",
-    "on-scroll-up": "~/.config/hypr/scripts/volume_control.sh --inc",
-    "on-scroll-down": "~/.config/hypr/scripts/volume_control.sh --dec",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click": "omarchy-launch-or-focus Wiremix 'alacritty --class=Wiremix -e wiremix'",
+    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-",
     "format-icons": ["", "", "󰕾", ""], 
 },
       
@@ -457,7 +457,7 @@
 "custom/cycle_wall":{
     "format":" ",
     "exec": "echo ; echo 󰸉 wallpaper select",
-    "on-click": "~/.config/hypr/scripts/wallpaperSelect.sh",
+    "on-click": "true",
     "interval" : 86400, // once every day
     "tooltip": true,
 },
@@ -468,13 +468,13 @@
     "interval" : 86400, // once every day
     "tooltip": true,
     "on-click": "pkill rofi || rofi -show drun -modi run,drun,filebrowser,window",
-    "on-click-middle": "~/.config/hypr/scripts/wallpaperSelect.sh",
-    "on-click-right": "~/.config/hypr/scripts/WaybarLayout.sh",
+    "on-click-middle": "true",
+    "on-click-right": "true",
 },
 
 // This is a custom cava visualizer
 "custom/cava_mviz": {
-    "exec": "~/.config/hypr/scripts/WaybarCava.sh",
+    "exec": "echo",
     "format": "{}"
 },
   
@@ -487,32 +487,18 @@
     "on-click": "playerctl previous",
     "on-click-right": "playerctl next",
     "scroll-step": 5.0,
-    "on-scroll-up": "~/.config/hypr/scripts/volume_control.sh --inc",
-    "on-scroll-down": "~/.config/hypr/scripts/volume_control.sh --dec",
+    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-",
     "smooth-scrolling-threshold": 1,
 },
 
 "custom/power": {
     "format": "⏻ ",
     "exec": "echo ; echo 󰟡 power // blur",
-	"on-click": "~/.config/hypr/scripts/wlogout.sh",
+	"on-click": "omarchy-menu system",
     "interval" : 86400, // once every day
     "tooltip": true,
 },
-
-"custom/swaync": {
-    "tooltip":true,     
-    "format": "{icon} {}",
-    "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
-      "none": "",
-      "dnd-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-none": "",
-      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-inhibited-none": ""
-    },
     "return-type": "json",
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",
@@ -593,8 +579,8 @@
     "on-click-middle": "",
     "on-click-right": "",
     "on-update": "",
-    "on-scroll-up": "~/.config/hypr/scripts/Brightness.sh --inc",
-    "on-scroll-down": "~/.config/hypr/scripts/Brightness.sh --dec",
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-",
     "smooth-scrolling-threshold": 1,
 	"tooltip-format": "{percent}%",
 },
@@ -617,7 +603,7 @@
 "cpu#vertical": {
     "format": "󰍛\n{usage}%",  
     "interval": 1,
-    "on-click": "gnome-system-monitor",
+    "on-click": "alacritty --class=btop -e btop",
 },
   
 "memory#vertical": {
@@ -627,7 +613,7 @@
     "format-alt-click": "click",
     "tooltip": true,
     "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
-    "on-click": "kitty --title btop sh -c 'btop'",
+    "on-click": "alacritty --class=btop -e btop",
 },
   
 "pulseaudio#vertical": {
@@ -646,10 +632,10 @@
     "ignored-sinks": ["Easy Effects Sink"],
 	},
     "scroll-step": 5.0,
-    "on-click-right": "~/.config/hypr/scripts/volume_control.sh --toggle",
-    "on-click": "pavucontrol -t 3",
-    "on-scroll-up": "~/.config/hypr/scripts/volume_control.sh --inc",
-    "on-scroll-down": "~/.config/hypr/scripts/volume_control.sh --dec",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click": "sh -c 'pavucontrol -t 3 || pavucontrol || true'",
+    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-",
 	"tooltip-format": "{icon} {desc} | {volume}%",
     "smooth-scrolling-threshold": 1,
 },
@@ -658,10 +644,10 @@
     "format": "{format_source}",
     "format-source": "󰍬",
     "format-source-muted": "󰍭",
-    "on-click": "pavucontrol",
-    "on-click-right": "~/.config/hypr/scripts/volume_control.sh --toggle-mic",
-    "on-scroll-up": "~/.config/hypr/scripts/volume_control.sh --mic-inc",
-    "on-scroll-down": "~/.config/hypr/scripts/volume_control.sh --mic-dec",
+    "on-click": "sh -c 'pavucontrol || true'",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-",
     "max-volume": 100,
     "tooltip": true,
 	"tooltip-format": "{source_desc} | {source_volume}%",
@@ -676,13 +662,13 @@
     "format-critical": "{icon}\n{temperatureC}°C",
     "format": " {icon}",
     "format-icons": ["󰈸"],
-    "on-click": "kitty --title nvtop sh -c 'nvtop'"
+    "on-click": "alacritty --class=nvtop -e nvtop"
 },
   
 "custom/power_vertical": {
     "format": "⏻",
     "exec": "echo ; echo 󰟡 power // blur",
-	"on-click": "~/.config/hypr/scripts/wlogout.sh",
+	"on-click": "omarchy-menu system",
     "interval" : 86400, // once every day
     "tooltip": true,
 },
