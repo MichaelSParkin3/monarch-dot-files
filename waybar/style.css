@@ -44,8 +44,8 @@
 #workspaces button.persistent {
     /* Persistent means pinned/shown always, not necessarily empty */
     /* Use a muted tone so placeholders don't shout */
-    /* color: @surface1;
-    border-radius: 10px; */
+    color: @rosewater;
+    border-radius: 10px;
 }
 
 #workspaces button.active {
@@ -71,5 +71,5 @@
 
 /* Empty workspace (Waybar-provided .empty class). Make it obvious. */
 #workspaces button.empty:not(.active) {
-    color: @maroon;
+    color: @crust;
 }
