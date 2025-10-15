@@ -56,6 +56,7 @@ window#waybar.hidden {
 #battery,
 #bluetooth,
 #clock,
+#custom-clock,
 #cpu,
 #disk,
 #idle_inhibitor,
@@ -131,7 +132,7 @@ window#waybar.hidden {
   box-shadow: inset 0 -3px transparent;
 }
 
-#clock {
+#clock, #custom-clock {
   color: @rosewater;  /* Frost white #E6F0FF */
 }
 

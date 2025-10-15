@@ -11,10 +11,10 @@
 "margin-top": 2,
 	
 "modules-left": [
-		"clock",
-	"custom/separator#blank",
-	"mpris",
-	"hyprland/window"
+    "custom/clock",
+    "custom/separator#blank",
+    "mpris",
+    "hyprland/window"
 ],
 
 "modules-center": [
@@ -48,10 +48,14 @@
 	"tooltip": false,
 },
 	
-"clock": {
-	//"format": "{:%I:%M %p - %d/%b}", //for AM/PM
-    "format": "{:%H:%M - %d/%b}", // 24H
-	"tooltip": false
+"custom/clock": {
+  "return-type": "json",
+  "format": "{}",
+  "interval": 60,
+  "signal": 8,
+  "exec": "bash /home/alistar/.config/omarchy/themes/monarch/waybar/scripts/clock_tz.sh print",
+  "on-click-right": "bash /home/alistar/.config/omarchy/themes/monarch/waybar/scripts/clock_tz.sh toggle",
+  "tooltip": false
 },
 
 
