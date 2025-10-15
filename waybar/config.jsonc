@@ -11,29 +11,31 @@
 "margin-top": 2,
 	
 "modules-left": [
-	"custom/weather",
+		"clock",
 	"custom/separator#blank",
-	"clock",
-	"custom/separator#blank",
+	"mpris",
 	"hyprland/window"
 ],
 
-"modules-center": [		
-	"hyprland/workspaces"	
+"modules-center": [
+    "hyprland/workspaces"
 ],
 		
 "modules-right": [
 	"tray",
-	"custom/separator#blank",
-	"mpris",
-	"custom/separator#blank",
-	"group/motherboard",
-	"custom/separator#blank",
-	"group/laptop",
-	"custom/separator#blank", 
-	"group/audio",
-	"custom/separator#blank",
-	"custom/power",					
+	"custom/separator#line",
+	"cpu",
+    "memory",
+    "network",
+    "bluetooth",
+	"backlight",
+	"custom/separator#line",
+	"pulseaudio",
+	"pulseaudio#microphone",
+	"battery",
+	"custom/separator#line",
+	"idle_inhibitor",
+	"custom/power",
 	],
 
 
@@ -42,7 +44,7 @@
 "custom/power": {
 	"format": " ",
 	"icon-size": 20,
-  "on-click": "wlogout -C $HOME/.config/wlogout/nova.css -l $HOME/.config/wlogout/layout -b 5 -B 400 -T 400",
+  "on-click": "omarchy-menu system",
 	"tooltip": false,
 },
 	
@@ -51,4 +53,6 @@
     "format": "{:%H:%M - %d/%b}", // 24H
 	"tooltip": false
 },
+
+
 }

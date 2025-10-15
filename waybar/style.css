@@ -1,1 +1,75 @@
-/home/alistar/.config/omarchy/themes/monarch/waybar/colors/Catppuccin-Mocha.css
+/* Monarch Waybar Style (Option B)
+ * Entry stylesheet loaded by Waybar.
+ * - Imports your base theme: Catppuccin-Mocha.css (layout, spacing, shapes)
+ * - That base theme imports monarch-glow.css (color variables like @primary)
+ * - Appends workspace state overrides last so they win on equal specificity
+ */
+
+/* Base theme (keeps your current visuals) */
+@import "/home/alistar/.config/omarchy/themes/monarch/waybar/colors/Catppuccin-Mocha.css";
+
+/*
+ * Workspace State Styles (Hyprland workspaces via Waybar)
+ * These use variables defined in monarch-glow.css (imported by Catppuccin).
+ * States:
+ *  - .persistent => empty workspace (exists but no windows)
+ *  - .active     => current workspace
+ *  - .urgent     => workspace with urgent window
+ *  - occupied-not-active => targeted via :not(.active):not(.urgent):not(.persistent)
+ */
+
+/* Default workspace button color */
+#workspaces button {
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+    color: @text;
+}
+
+#workspaces button:hover {
+	border-radius: 10px;
+	color: @maroon;
+	background-color: @surface0;
+ 	padding-left: 2px;
+    padding-right: 2px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.persistent {
+    /* Persistent means pinned/shown always, not necessarily empty */
+    /* Use a muted tone so placeholders don't shout */
+    color: @rosewater;
+    border-radius: 10px;
+}
+
+#workspaces button.active {
+    color: @primary;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.urgent {
+	color: @error;  /* Alert red #FF5252 */
+ 	border-radius: 0px;
+}
+
+/* Occupied but not active (explicit) */
+#workspaces button:not(.active):not(.urgent):not(.persistent) {
+    color: @subtext0;
+}
+
+/* (no custom ws modules active) */
+
+/* Empty workspace (Waybar-provided .empty class). Make it obvious. */
+#workspaces button.empty:not(.active) {
+    color: @crust;
+}

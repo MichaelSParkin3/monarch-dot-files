@@ -1,5 +1,5 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Catppuccin Mocha */
+/* Azure Glow - Cyber Ocean Aesthetic */
 
 
 * {
@@ -12,7 +12,7 @@ font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 padding: 1px;
 }
 
-@import "colors/catppuccin-themes/mocha.css";
+@import "/home/alistar/.config/omarchy/themes/monarch/waybar/colors/monarch-glow.css"; 
 
 window#waybar {
   transition-property: background-color;
@@ -43,8 +43,8 @@ window#waybar.hidden {
 
 } 
 
-.modules-left, .modules-right {
-  	border: 1px solid @blue;
+.modules-left, .modules-center, .modules-right {
+  	border: 1px solid @primary;  /* Bright sky blue #40C4FF */
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-right: 4px;
@@ -102,16 +102,16 @@ window#waybar.hidden {
 }
 
 #idle_inhibitor {
-  color: @blue;
+  color: @primary;  /* Bright sky blue #40C4FF */
 }
 
 #bluetooth,
 #backlight {
-  color: @blue;
+  color: @primary;  /* Bright sky blue #40C4FF */
 }
 
 #battery {
-  color: @green;
+  color: @success;  /* Electric cyan #00E5FF */
 }
 
 @keyframes blink {
@@ -121,8 +121,8 @@ window#waybar.hidden {
 }
 
 #battery.critical:not(.charging) {
-  background-color: @red;
-  color: @theme_text_color;
+  background-color: @error;  /* Alert red #FF5252 */
+  color: @base;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -132,16 +132,19 @@ window#waybar.hidden {
 }
 
 #clock {
-  color: @yellow;
+  color: @rosewater;  /* Frost white #E6F0FF */
 }
 
 #cpu {
-  color: @green;
+  color: @secondary;  /* Rich azure #00B0FF */
 }
 
-#custom-keyboard,
-#memory {
+#custom-keyboard {
   color: @sky;
+}
+
+#memory {
+  color: @warning;  /* Vibrant yellow #FFD740 */
 }
 
 #disk {
@@ -149,11 +152,12 @@ window#waybar.hidden {
 }
 
 #temperature {
-  color: @teal;
+  color: @error;  /* Alert red #FF5252 */
 }
 
 #temperature.critical {
-  background-color: @red;
+  background-color: @error;
+  color: @base;
 }
 
 #tray > .passive {
@@ -165,46 +169,6 @@ window#waybar.hidden {
 
 #keyboard-state {
   color: @flamingo;
-}
-
-#workspaces button {
-    box-shadow: none;
-	text-shadow: none;
-    padding: 0px;
-    border-radius: 9px;
-    padding-left: 4px;
-    padding-right: 4px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
-#workspaces button:hover {
-	border-radius: 10px;
-	color: @overlay0;
-	background-color: @surface0;
- 	padding-left: 2px;
-    padding-right: 2px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
-#workspaces button.persistent {
-	color: @surface1;
-	border-radius: 10px;
-}
-
-#workspaces button.active {
-	color: @peach;
-  	border-radius: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
-#workspaces button.urgent {
-	color: @red;
- 	border-radius: 0px;
 }
 
 #taskbar button.active {
@@ -230,11 +194,11 @@ window#waybar.hidden {
 }
 
 #custom-power {
-  color: @red;
+  color: @error;  /* Alert red #FF5252 */
 }
 
 #custom-updater {
-  color: @red;
+  color: @error;  /* Alert red #FF5252 */
 }
 
 #custom-light_dark {
@@ -250,26 +214,27 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-  color: @sapphire;
+  color: @primary;  /* Bright sky blue #40C4FF */
 }
 
 #pulseaudio.bluetooth {
-  color: @pink;
+  color: @teal;  /* Electric cyan */
 }
 #pulseaudio.muted {
-  color: @red;
+  color: @error;  /* Alert red #FF5252 */
 }
 
 #window {
-  color: @mauve;
+  color: @text;  /* Soft glowing cyan #B3E5FC */
 }
 
-#custom-waybar-mpris {
-  color:@lavender;
+#custom-waybar-mpris,
+#mpris {
+  color: @lavender;  /* Cool periwinkle #82B1FF */
 }
 
 #network {
-  color: @teal;
+  color: @info;  /* Cool periwinkle #82B1FF */
 }
 #network.disconnected,
 #network.disabled {
@@ -314,4 +279,9 @@ window#waybar.hidden {
 #backlight-slider highlight {
 	min-width: 10px;
 	border-radius: 5px;
+}
+/* icon-only spacing for common modules */
+#pulseaudio, #pulseaudio-slider, #battery, #cpu, #memory, #disk, #network, #temperature, #mpris {
+  padding-left: 6px;
+  padding-right: 6px;
 }
