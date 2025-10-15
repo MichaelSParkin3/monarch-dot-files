@@ -68,3 +68,8 @@
 }
 
 /* (no custom ws modules active) */
+
+/* Empty workspace (Waybar-provided .empty class). Make it obvious. */
+#workspaces button.empty:not(.active) {
+    color: @maroon;
+}
