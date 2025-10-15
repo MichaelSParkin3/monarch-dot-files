@@ -17,8 +17,8 @@
 	"hyprland/window"
 ],
 
-"modules-center": [		
-	"hyprland/workspaces"	
+"modules-center": [
+    "hyprland/workspaces"
 ],
 		
 "modules-right": [
@@ -53,4 +53,6 @@
     "format": "{:%H:%M - %d/%b}", // 24H
 	"tooltip": false
 },
+
+
 }

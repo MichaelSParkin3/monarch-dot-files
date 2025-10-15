@@ -171,46 +171,6 @@ window#waybar.hidden {
   color: @flamingo;
 }
 
-#workspaces button {
-    box-shadow: none;
-	text-shadow: none;
-    padding: 0px;
-    border-radius: 9px;
-    padding-left: 4px;
-    padding-right: 4px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
-#workspaces button:hover {
-	border-radius: 10px;
-	color: @overlay0;
-	background-color: @surface0;
- 	padding-left: 2px;
-    padding-right: 2px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
-#workspaces button.persistent {
-	color: @surface1;
-	border-radius: 10px;
-}
-
-#workspaces button.active {
-	color: @primary;  /* Bright sky blue #40C4FF */
-  	border-radius: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
-#workspaces button.urgent {
-	color: @error;  /* Alert red #FF5252 */
- 	border-radius: 0px;
-}
-
 #taskbar button.active {
     padding-left: 8px;
     padding-right: 8px;
