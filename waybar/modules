@@ -321,7 +321,7 @@
 	"format": "{player_icon} {status_icon} {dynamic}",
 	"format-paused": "{player_icon} {status_icon} <i>{dynamic}</i>",
     "tooltip": true,
-    "tooltip-format": "{player_icon} - {title}\n{artist} — {album}",
+    "tooltip-format": "{player_icon} {title}\n{artist} — {album}",
 	"on-click-middle": "playerctl play-pause",
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
