@@ -12,7 +12,7 @@ font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 padding: 1px;
 }
 
-@import "./monarch-glow.css"; 
+@import "/home/alistar/.config/omarchy/themes/monarch/waybar/colors/monarch-glow.css"; 
 
 window#waybar {
   transition-property: background-color;

@@ -6,7 +6,7 @@
  */
 
 /* Base theme (keeps your current visuals) */
-@import "./colors/Catppuccin-Mocha.css";
+@import "/home/alistar/.config/omarchy/themes/monarch/waybar/colors/Catppuccin-Mocha.css";
 
 /*
  * Workspace State Styles (Hyprland workspaces via Waybar)

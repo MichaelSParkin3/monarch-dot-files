@@ -2,7 +2,7 @@
 // Sleek
 
 {
-"include": "./modules",
+"include": "/home/alistar/.config/omarchy/themes/monarch/waybar/modules",
 "layer": "top",
 "position": "top",
 "height": 12,
