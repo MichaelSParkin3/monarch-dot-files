@@ -275,7 +275,7 @@
     
 "hyprland/window": {
     "format": "{}",
-    "max-length": 40,
+    "max-length": 20,
     "separate-outputs": true,
     "offscreen-css" : true,
     "offscreen-css-text": "(inactive)",
@@ -318,10 +318,10 @@
 
 "mpris": {
     "interval": 10,
-	"format": "{status_icon} {dynamic}",
-	"format-paused": "{status_icon} <i>{dynamic}</i>",
+	"format": "{player_icon} {status_icon} {dynamic}",
+	"format-paused": "{player_icon} {status_icon} <i>{dynamic}</i>",
     "tooltip": true,
-    "tooltip-format": "{title}\n{artist} — {album}",
+    "tooltip-format": "{player_icon} - {title}\n{artist} — {album}",
 	"on-click-middle": "playerctl play-pause",
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
@@ -331,6 +331,9 @@
     "smooth-scrolling-threshold": 1,
 	"player-icons": {
         "chromium": "",
+        "brave": "",           // fallback to Chromium icon; swap if you prefer a Brave glyph
+        "brave-browser": "",
+        "brave-nightly": "",
 		"default": "",
         "firefox": "",
         "kdeconnect": "",
