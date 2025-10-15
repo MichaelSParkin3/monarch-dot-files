@@ -1,0 +1,55 @@
+/*
+*
+* Azure Glow palette
+* A deep cyber-ocean aesthetic with bioluminescent highlights
+* Based on: /home/alistar/.config/omarchy/themes/azure-glow
+*
+*/
+
+/* Base Colors - Deep Ocean Foundations */
+@define-color base   #0A0E14;  /* Deep midnight blue - main background */
+@define-color mantle #081018;  /* Abyssal navy - darker background */
+@define-color crust  #0a0f14;  /* Abyss black-blue - darkest background */
+
+/* Text Colors - Ice and Cyan Tones */
+@define-color text     #B3E5FC;  /* Soft glowing cyan - primary text */
+@define-color subtext0 #a9dfff;  /* Soft ice blue - secondary text */
+@define-color subtext1 #cceeff;  /* Snow drift - tertiary text */
+
+/* Surface Colors - Shadowy Depths */
+@define-color surface0 #101820;  /* Deep graphite */
+@define-color surface1 #1B2A3A;  /* Dim steel blue */
+@define-color surface2 #123247;  /* Steel blue shadow */
+
+/* Overlay Colors - Translucent Blues */
+@define-color overlay0 #1c2833;  /* Dark teal overlay */
+@define-color overlay1 #0d1b26;  /* Abyssal navy overlay */
+@define-color overlay2 #00334d;  /* Darker teal overlay */
+
+/* Primary Accent Colors - Bioluminescent Glow */
+@define-color blue      #40C4FF;  /* Bright sky blue - primary accent */
+@define-color lavender  #82B1FF;  /* Cool periwinkle - info */
+@define-color sapphire  #00B0FF;  /* Rich azure - secondary */
+@define-color sky       #33d4ff;  /* Sky glow - info variant */
+@define-color teal      #00e0ff;  /* Electric cyan - highlights */
+@define-color green     #00E5FF;  /* Electric cyan - success */
+@define-color yellow    #FFD740;  /* Vibrant yellow - warning */
+@define-color peach     #ffdf70;  /* Soft amber - warning variant */
+@define-color maroon    #ff6b6b;  /* Light red - error variant */
+@define-color red       #FF5252;  /* Alert red - danger/error */
+@define-color mauve     #9a6bff;  /* Deep purple - magenta */
+@define-color pink      #b594ff;  /* Bright purple - pink */
+@define-color flamingo  #66b2ff;  /* Cloud-washed blue */
+@define-color rosewater #E6F0FF;  /* Frost white - highlights */
+
+/* Additional Azure Glow Specific Colors */
+@define-color theme_base_color  rgba(10, 14, 20, 0.70);  /* Base with transparency */
+@define-color theme_text_color  #B3E5FC;  /* Soft glowing cyan */
+
+/* Module Specific Semantic Colors */
+@define-color success   #00E5FF;  /* Electric cyan - success states */
+@define-color warning   #FFD740;  /* Vibrant yellow - warnings */
+@define-color error     #FF5252;  /* Alert red - errors */
+@define-color info      #82B1FF;  /* Cool periwinkle - info */
+@define-color primary   #40C4FF;  /* Bright sky blue - primary actions */
+@define-color secondary #00B0FF;  /* Rich azure - secondary actions */
