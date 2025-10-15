@@ -43,7 +43,7 @@ window#waybar.hidden {
 
 } 
 
-.modules-left, .modules-right {
+.modules-left, .modules-center, .modules-right {
   	border: 1px solid @primary;  /* Bright sky blue #40C4FF */
 	padding-top: 2px;
 	padding-bottom: 2px;
