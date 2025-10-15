@@ -13,6 +13,7 @@
 "modules-left": [
 		"clock",
 	"custom/separator#blank",
+	"mpris",
 	"hyprland/window"
 ],
 
@@ -23,11 +24,16 @@
 "modules-right": [
 	"tray",
 	"custom/separator#line",
-	"mpris",
-	"group/motherboard",
-	"group/laptop",
-	"group/audio",
-	"group/battery",
+	"cpu",
+    "memory",
+    "network",
+    "bluetooth",
+	"backlight",
+	"custom/separator#line",
+	"pulseaudio",
+	"pulseaudio#microphone",
+	"battery",
+	"custom/separator#line",
 	"idle_inhibitor",
 	"custom/power",
 	],
