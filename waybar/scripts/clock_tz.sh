@@ -17,10 +17,10 @@ ensure_state() {
 print_time() {
   ensure_state
   if [[ "$MODE" == "ba" ]]; then
-    TEXT=$(TZ=America/Argentina/Buenos_Aires date +"%H:%M - %d/%b")
+    TEXT=$(TZ=America/Argentina/Buenos_Aires date +"%H:%M · %A, %B %-d ·")
     CLASS="clock ba"
   else
-    TEXT=$(date +"%H:%M - %d/%b")
+    TEXT=$(date +"%H:%M · %A, %B %-d ·")
     CLASS="clock local"
   fi
   # Emit JSON without jq (Waybar expects a single JSON object per update)
