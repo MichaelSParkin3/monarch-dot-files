@@ -1,2 +1,2 @@
-/* Delegate to the theme’s full Waybar stylesheet */
-@import "/home/alistar/.config/omarchy/themes/monarch/waybar/style.css";
+/* Delegate to unified Waybar stylesheet */
+@import "/home/alistar/.config/omarchy/current/theme/.config/waybar/style.css";
