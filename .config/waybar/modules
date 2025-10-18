@@ -24,7 +24,7 @@
       // --- Web Browsers ---
       "class<firefox>": "\uf269",
       "class<brave>": "\uf8ae",
-      "class<brave-browser>": "\uf488",
+      "class<brave-browser>": "\uf2d0",
       "class<chromium>": "\ue83d",
       "class<google-chrome>": "\ue83d",
       "class<chrome>": "\ue83d",
