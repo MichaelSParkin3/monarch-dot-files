@@ -33,3 +33,5 @@ CLAUDE.md
 # Gemini Code
 GEMINI.md
 .gemini/
+
+.hidden/
