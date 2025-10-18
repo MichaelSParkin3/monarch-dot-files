@@ -97,9 +97,9 @@
       "class<gnome-system-monitor>": "\ue621",
       "class<pavucontrol>": "\uf028",
       "class<blueman-manager>": "\ue707",
-      "class<steam>": "\uf1d8",
-      "class<lutris>": "\uf1d8",
-      "class<gamescope>": "\uf1d8",
+      "class<steam>": "\udb81\udcd3",
+      "class<net.lutris.Lutris>": "\udb80\ude96",
+      "class<gamescope>": "\uf11b",
 
       // --- Productivity & Reference ---
       "class<obsidian>": "\udb85\udce7",
