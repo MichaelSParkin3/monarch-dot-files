@@ -1,7 +1,7 @@
 //* ---- 💫 https://github.com/JaKooLit 💫 ---- *//
 
 {
-// HYPRLAND WORKSPACES. CHOOSE as desired and place on waybar configs
+// HYPRLAND WORKSPACES. CHow iconsow iconsow iconsdesired and place on waybar configs
 // CIRCLES Style with window icons
 "hyprland/workspaces": {
 	"active-only": false,
@@ -33,15 +33,15 @@
       "class<vivaldi>": "\ue6e7",
 
       // --- Terminals ---
-      // "class<alacritty>": "\ue795",
-      // "class<kitty>": "\ue798",
-      // "class<xterm>": "\ue795",
-      // "class<urxvt>": "\ue795",
-      // "class<gnome-terminal>": "\uf120",
-      // "class<konsole>": "\uf120",
-      // "class<tilix>": "\uf120",
-      // "class<terminator>": "\uf120",
-      // "class<wezterm>": "\uf120",
+      "class<alacritty>": "\ue795",
+      "class<kitty>": "\ue798",
+      "class<xterm>": "\ue795",
+      "class<urxvt>": "\ue795",
+      "class<gnome-terminal>": "\uf120",
+      "class<konsole>": "\uf120",
+      "class<tilix>": "\uf120",
+      "class<terminator>": "\uf120",
+      "class<wezterm>": "\uf120",
 
       // --- Editors & IDEs ---
       "class<code>": "\ue70c",

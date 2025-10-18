@@ -432,5 +432,5 @@ window#waybar.hidden {
 
 /* Empty workspace */
 #workspaces button.empty:not(.active) {
-  color: @crust;
+  color: @lavender;
 }
