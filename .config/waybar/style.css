@@ -13,7 +13,7 @@
   font-weight: bold;
   min-height: 0;
   /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-  font-size: 97%;
+  font-size: 96%;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   padding: 1px;
 }
@@ -384,7 +384,7 @@ window#waybar.hidden {
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
   color: @text;
-  background-color: @overlay0;
+  /* background-color: @overlay0; */
 }
 
 #workspaces button:hover {
@@ -407,7 +407,7 @@ window#waybar.hidden {
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 14px;
-  background-color: @primary;
+  background-color: @success;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -427,7 +427,7 @@ window#waybar.hidden {
 
 /* Occupied but not active */
 #workspaces button:not(.active):not(.urgent):not(.persistent) {
-  color: @secondary;
+  color: @primary;
 }
 
 /* Empty workspace */
