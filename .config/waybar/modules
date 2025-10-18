@@ -21,6 +21,7 @@
       "5": [],
     },
     "window-rewrite": {
+      // --- Web Browsers ---
       "class<firefox>": "\uf269",
       "class<brave>": "\uf8ae",
       "class<brave-browser>": "\uf8ae",
@@ -30,6 +31,8 @@
       "class<msedge>": "\uf5a4",
       "class<opera>": "\uf1c7",
       "class<vivaldi>": "\ue6e7",
+
+      // --- Terminals ---
       "class<alacritty>": "\ue795",
       "class<kitty>": "\ue798",
       "class<xterm>": "\ue795",
@@ -39,6 +42,8 @@
       "class<tilix>": "\uf120",
       "class<terminator>": "\uf120",
       "class<wezterm>": "\uf120",
+
+      // --- Editors & IDEs ---
       "class<code>": "\ue70c",
       "class<neovim>": "\ue62b",
       "class<vim>": "\ue62b",
@@ -51,30 +56,42 @@
       "class<jetbrains-webstorm>": "\ue7b5",
       "class<jetbrains-goland>": "\ue7b5",
       "class<jetbrains-rider>": "\ue7b5",
+
+      // --- File Managers ---
       "class<thunar>": "\uf07b",
       "class<nautilus>": "\uf07b",
       "class<org.gnome.nautilus>": "\uf07b",
       "class<dolphin>": "\uf07b",
       "class<nemo>": "\uf07b",
       "class<pcmanfm>": "\uf07b",
+
+      // --- Communication ---
       "class<discord>": "\uf36c",
       "class<telegram>": "\uf2c6",
       "class<slack>": "\uf3ef",
       "class<element>": "\ue762",
       "class<thunderbird>": "\uf0e0",
       "class<evolution>": "\uf0e0",
+
+      // --- Media Players ---
       "class<spotify>": "\uf1bc",
       "class<vlc>": "\uf03d",
       "class<mpv>": "\uf03d",
+
+      // --- Creative Tools ---
       "class<krita>": "\uf1c5",
       "class<gimp>": "\uf1c5",
       "class<audacity>": "\uf025",
       "class<blender>": "\ue7ad",
+
+      // --- Office Suite ---
       "class<libreoffice>": "\uf1c1",
       "class<librewriter>": "\uf1c1",
       "class<localc>": "\uf1c1",
       "class<libreimpress>": "\uf1c1",
       "class<soffice>": "\uf1c1",
+
+      // --- System Tools & Games ---
       "class<btop>": "\ue621",
       "class<htop>": "\ue621",
       "class<gnome-system-monitor>": "\ue621",
@@ -83,10 +100,14 @@
       "class<steam>": "\uf1d8",
       "class<lutris>": "\uf1d8",
       "class<gamescope>": "\uf1d8",
+
+      // --- Productivity & Reference ---
       "class<obsidian>": "\uf40e",
       "class<notion>": "\ue600",
       "class<zotero>": "\uf02d",
       "class<calibre>": "\uf02d",
+
+      // --- Web Apps (Brave PWAs) ---
       "class<brave-grok.com__-Default>": "\uf544",
       "class<brave-chat.openai.com__-Default>": "\uf544",
       "class<brave-web.whatsapp.com__-Default>": "\uf232",
