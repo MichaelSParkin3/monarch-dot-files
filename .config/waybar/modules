@@ -99,19 +99,24 @@
       "class<blueman-manager>": "\ue707",
       "class<steam>": "\udb81\udcd3",
       "class<net.lutris.Lutris>": "\udb80\ude96",
-      "class<gamescope>": "\uf11b",
+      "class<gamescope.Gamescope>": "\uf11b",
+      "class<timeshift-gtk>": "\udb85\udc42",
 
       // --- Productivity & Reference ---
       "class<obsidian>": "\udb85\udce7",
       "class<notion>": "\ue600",
       "class<zotero>": "\uf02d",
       "class<calibre>": "\uf02d",
+      "class<org.qbittorrent.qBittorrent>": "\udb80\uddda",
+      "class<Bitwarden>": "\udb81\udff5",
 
       // --- Web Apps (Brave PWAs) ---
       "class<brave-grok.com__-Default>": "\udb82\udf79",
       "class<brave-chat.openai.com__-Default>": "\uf544",
       "class<brave-web.whatsapp.com__-Default>": "\uf232",
       "class<brave-youtube.com__-Default>": "\uf16a",
+      "class<brave-discord.com__channels_@me-Default>": "\uf1ff",
+      "class<brave-claude.ai__new-Default>": "\udb85\udf38",
       "class<com.stremio.stremio>": "\uf52c"
     }
 },
