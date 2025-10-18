@@ -24,7 +24,7 @@
       // --- Web Browsers ---
       "class<firefox>": "\uf269",
       "class<brave>": "\uf8ae",
-      "class<brave-browser>": "\uf8ae",
+      "class<brave-browser>": "\uf488",
       "class<chromium>": "\ue83d",
       "class<google-chrome>": "\ue83d",
       "class<chrome>": "\ue83d",
@@ -33,15 +33,15 @@
       "class<vivaldi>": "\ue6e7",
 
       // --- Terminals ---
-      "class<alacritty>": "\ue795",
-      "class<kitty>": "\ue798",
-      "class<xterm>": "\ue795",
-      "class<urxvt>": "\ue795",
-      "class<gnome-terminal>": "\uf120",
-      "class<konsole>": "\uf120",
-      "class<tilix>": "\uf120",
-      "class<terminator>": "\uf120",
-      "class<wezterm>": "\uf120",
+      // "class<alacritty>": "\ue795",
+      // "class<kitty>": "\ue798",
+      // "class<xterm>": "\ue795",
+      // "class<urxvt>": "\ue795",
+      // "class<gnome-terminal>": "\uf120",
+      // "class<konsole>": "\uf120",
+      // "class<tilix>": "\uf120",
+      // "class<terminator>": "\uf120",
+      // "class<wezterm>": "\uf120",
 
       // --- Editors & IDEs ---
       "class<code>": "\ue70c",
@@ -102,17 +102,17 @@
       "class<gamescope>": "\uf1d8",
 
       // --- Productivity & Reference ---
-      "class<obsidian>": "\uf40e",
+      "class<obsidian>": "\udb85\udce7",
       "class<notion>": "\ue600",
       "class<zotero>": "\uf02d",
       "class<calibre>": "\uf02d",
 
       // --- Web Apps (Brave PWAs) ---
-      "class<brave-grok.com__-Default>": "\uf544",
+      "class<brave-grok.com__-Default>": "\udb82\udf79",
       "class<brave-chat.openai.com__-Default>": "\uf544",
       "class<brave-web.whatsapp.com__-Default>": "\uf232",
-      "class<brave-youtube.com__-Default>": "\uf167",
-      "class<com.stremio.stremio>": "\uf03d"
+      "class<brave-youtube.com__-Default>": "\uf16a",
+      "class<com.stremio.stremio>": "\uf52c"
     }
 },
 
@@ -144,7 +144,7 @@
       "8": "VIII",
       "9": "IX",
       "10": "X",
-      
+
     },
 },
 
@@ -171,7 +171,7 @@
       "persistent":"󰊠",
     },
 },
-  
+
 "hyprland/workspaces#kanji": {
     "disable-scroll": true,
     "all-outputs": true,
@@ -196,7 +196,7 @@
       "10": "十",
     }
 },
-  
+
 //  NUMBERS and ICONS style
 "hyprland/workspaces#4": {
     "format": "{name}",
@@ -223,9 +223,9 @@
       "default": "",
     },
 },
- 
+
 // GROUP
-  
+
 "group/motherboard": {
     "orientation": "horizontal",
     "modules": [
@@ -233,7 +233,7 @@
       "memory",
       ]
 },
-  
+
 "group/laptop": {
     "orientation": "horizontal",
     "modules": [
@@ -242,13 +242,13 @@
       "bluetooth",
       ]
 },
-  
+
 "group/audio": {
     "orientation": "horizontal",
     "modules": [
       "pulseaudio",
       "pulseaudio#microphone",
-      ]	
+      ]
 },
 
 "backlight": {
@@ -269,7 +269,7 @@
     "on-scroll-down": "brightnessctl set 5%-",
     "smooth-scrolling-threshold": 1,
 },
-      
+
 "battery": {
     //"interval": 5,
     "align": 0,
@@ -293,7 +293,7 @@
     "tooltip-format": "{timeTo} | 󱐋 {power}w | 󰂅 {capacity}%",
     "on-click": "omarchy-menu power",
 },
-      
+
 "bluetooth": {
     "format": "",
     "format-disabled": "󰂳",
@@ -304,7 +304,7 @@
     "tooltip": true,
     "on-click": "blueberry",
 },
-     
+
 "clock": {
     "interval": 1,
     //"format": " {:%I:%M %p}", // AM PM format
@@ -324,7 +324,7 @@
       "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
                 }
                 }
-    },              
+    },
     "actions":  {
       "on-click-right": "mode",
       "on-click-forward": "tz_up",
@@ -332,7 +332,7 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
 },
-   
+
 "cpu": {
     "format": "󰍛",
     "interval": 1,
@@ -340,7 +340,7 @@
     "tooltip-format": "CPU: {usage}%",
     "on-click": "alacritty --class=btop -e btop",
 },
-    
+
 "disk": {
     "interval": 30,
     //"format": "󰋊",
@@ -350,7 +350,7 @@
     //"tooltip": true,
     "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
 },
-    
+
 "hyprland/language": {
     "format": "Lang: {}",
     "format-en": "US",
@@ -358,12 +358,12 @@
     "keyboard-name": "at-translated-set-2-keyboard",
     "on-click": "hyprctl switchxkblayout $SET_KB next"
 },
-    
+
 "hyprland/submap": {
     "format": "<span style=\"italic\">  {}</span>", // Icon: expand-arrows-alt
     "tooltip": false,
 },
-    
+
 "hyprland/window": {
     "format": "{}",
     "max-length": 20,
@@ -377,7 +377,7 @@
       "(.*) - kitty": "> [$1]",
     },
 },
-  
+
 "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
@@ -385,20 +385,20 @@
       "deactivated": " ",
                     }
 },
-    
+
 "keyboard-state": {
     //"numlock": true,
     "capslock": true,
     "format": {
       "numlock": "N {icon}",
     "capslock":"󰪛 {icon}",
-        }, 
+        },
     "format-icons": {
       "locked": "",
       "unlocked": ""
               },
 },
-    
+
 "memory": {
     "interval": 10,
     "format": "󰾆",
@@ -441,12 +441,12 @@
 	// "ignored-players": ["firefox"]
 	"max-length": 15,
 },
-      
+
 "network": {
     "format": "{ifname}",
     "format-wifi": "{icon}",
     "format-ethernet": "󰌘",
-    "format-disconnected": "󰌙", 
+    "format-disconnected": "󰌙",
     "tooltip-format": "{ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
     "format-linked": "󰈁 {ifname} (No IP)",
     "tooltip-format-wifi": "{essid} | {icon} {signalStrength}% |  {bandwidthUpBytes} |  {bandwidthDownBytes}",
@@ -456,13 +456,13 @@
     "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
     "on-click": "alacritty --class=Impala -e impala"
 },
-  
+
 "network#speed": {
     "interval": 1,
     "format": "{ifname}",
     "format-wifi": "{icon}  {bandwidthUpBytes}  {bandwidthDownBytes}",
     "format-ethernet": "󰌘   {bandwidthUpBytes}  {bandwidthDownBytes}",
-    "format-disconnected": "󰌙", 
+    "format-disconnected": "󰌙",
     "tooltip-format": "{ipaddr}",
     "format-linked": "󰈁 {ifname} (No IP)",
     "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
@@ -471,7 +471,7 @@
     "max-length": 50,
     "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
 },
-      
+
 "pulseaudio": {
     "format": "{icon}  {volume}%",
     "format-bluetooth": "{icon} 󰂰 {volume}%",
@@ -483,7 +483,7 @@
         "phone": "",
         "portable": "",
         "car": "",
-    "default": ["", "", "󰕾", ""], 
+    "default": ["", "", "󰕾", ""],
     "ignored-sinks": ["Easy Effects Sink"],
     },
     "scroll-step": 5.0,
@@ -517,12 +517,12 @@
     "format-icons": ["󰈸"],
     "on-click": "alacritty --class=nvtop -e nvtop"
 },
-      
+
 "tray": {
     "icon-size": 15,
     "spacing": 8,
 },
-      
+
 "wireplumber": {
     "format": "{icon} {volume} %",
     "format-muted": " Mute",
@@ -530,9 +530,9 @@
     "on-click": "omarchy-launch-or-focus Wiremix 'alacritty --class=Wiremix -e wiremix'",
     "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
     "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-",
-    "format-icons": ["", "", "󰕾", ""], 
+    "format-icons": ["", "", "󰕾", ""],
 },
-      
+
 "wlr/taskbar": {
     "format": "{icon} {name} ",
     "icon-size": 15,
@@ -542,10 +542,10 @@
     "on-click-middle": "close",
     "ignore-list": [
           "wofi",
-          "rofi",  
+          "rofi",
                    ]
 },
-      
+
 "custom/cycle_wall":{
     "format":" ",
     "exec": "echo ; echo 󰸉 wallpaper select",
@@ -553,7 +553,7 @@
     "interval" : 86400, // once every day
     "tooltip": true,
 },
-      
+
 "custom/menu": {
     "format": "{}",
     "exec": "echo ; echo 󱓟 app launcher",
@@ -569,7 +569,7 @@
     "exec": "echo",
     "format": "{}"
 },
-  
+
 "custom/playerctl": {
     "format": "<span>{}</span>",
     "return-type": "json",
@@ -591,8 +591,8 @@
     "interval" : 86400, // once every day
     "tooltip": true,
 },
-    
-// NOTE:! This is only for Arch and Arch Based Distros  
+
+// NOTE:! This is only for Arch and Arch Based Distros
 "custom/updater":{
     "format": " {}",
     "exec": "checkupdates | wc -l",
@@ -600,7 +600,7 @@
     "interval": 15,
     "on-click": "alacritty --title update --hold -e bash -c \"paru -Syu || yay -Syu\"; notify-send \"System Updated\"",
 },
-    
+
 "custom/weather": {
     "format": "{}",
     "format-alt": "{alt}: {}",
@@ -612,33 +612,33 @@
     "exec-if": "ping wttr.in -c1",
     "tooltip" : true,
 },
-  
-  
+
+
 // Separators
 "custom/separator#dot": {
     "format": "",
     "interval": "once",
     "tooltip": false
 },
-  
+
 "custom/separator#dot-line": {
     "format": "",
     "interval": "once",
     "tooltip": false
 },
-  
+
 "custom/separator#line": {
     "format": "|",
     "interval": "once",
     "tooltip": false
 },
-  
+
 "custom/separator#blank": {
     "format": "",
     "interval": "once",
     "tooltip": false
 },
-  
+
 "custom/separator#blank_2": {
 	"format": "  ",
     "interval": "once",
@@ -650,9 +650,9 @@
     "interval": "once",
     "tooltip": false
 },
-  
+
 // Modules below are for vertical layout
-  
+
 "backlight#vertical": {
 	"interval": 2,
     "align": 0.35,
@@ -669,7 +669,7 @@
     "smooth-scrolling-threshold": 1,
 	"tooltip-format": "{percent}%",
 },
-  
+
 "clock#vertical": {
 	"format": "{:\n%H\n%M\n%S\n\n \n%d\n%m\n%y}",
 	"interval": 1,
@@ -686,11 +686,11 @@
 },
 
 "cpu#vertical": {
-    "format": "󰍛\n{usage}%",  
+    "format": "󰍛\n{usage}%",
     "interval": 1,
     "on-click": "alacritty --class=btop -e btop",
 },
-  
+
 "memory#vertical": {
     "interval": 10,
     "format": "󰾆\n{percentage}%",
@@ -700,7 +700,7 @@
     "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
     "on-click": "alacritty --class=btop -e btop",
 },
-  
+
 "pulseaudio#vertical": {
     "format": "{icon}",
     "format-bluetooth": "󰂰",
@@ -713,7 +713,7 @@
         "portable": "",
         "car": "",
     "default": ["", "", "󰕾", ""],
-	"tooltip-format": "{icon} {desc} | {volume}%", 
+	"tooltip-format": "{icon} {desc} | {volume}%",
     "ignored-sinks": ["Easy Effects Sink"],
 	},
     "scroll-step": 5.0,
@@ -724,7 +724,7 @@
 	"tooltip-format": "{icon} {desc} | {volume}%",
     "smooth-scrolling-threshold": 1,
 },
-  
+
 "pulseaudio#microphone_vertical": {
     "format": "{format_source}",
     "format-source": "󰍬",
@@ -737,7 +737,7 @@
     "tooltip": true,
 	"tooltip-format": "{source_desc} | {source_volume}%",
 },
-  
+
 "temperature#vertical": {
     "interval": 10,
     "tooltip": true,
@@ -749,7 +749,7 @@
     "format-icons": ["󰈸"],
     "on-click": "alacritty --class=nvtop -e nvtop"
 },
-  
+
 "custom/power_vertical": {
     "format": "⏻",
     "exec": "echo ; echo 󰟡 power // blur",
