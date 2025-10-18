@@ -405,7 +405,7 @@ window#waybar.hidden {
 #workspaces button.active {
   color: @crust;
   border-radius: 10px;
-  padding-left: 10px;
+  padding-left: 6px;
   padding-right: 14px;
   background-color: @success;
   animation: gradient_f 20s ease-in infinite;
@@ -416,7 +416,7 @@ window#waybar.hidden {
   border: none;
   box-shadow: none;
   color: @rosewater;
-  padding-left: 12px;
+  padding-left: 8px;
   padding-right: 16px;
 }
 
@@ -433,4 +433,11 @@ window#waybar.hidden {
 /* Empty workspace */
 #workspaces button.empty:not(.active) {
   color: @lavender;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#workspaces button.empty.active {
+  padding-left: 6px;
+  padding-right: 6px;
 }
