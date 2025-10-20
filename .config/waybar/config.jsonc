@@ -2,61 +2,56 @@
 // Sleek
 
 {
-"include": "/home/alistar/.config/omarchy/themes/monarch/.config/waybar/modules",
-"layer": "top",
-"position": "top",
-"height": 12,
-"margin-left": 10,
-"margin-right": 10,
-"margin-top": 2,
-	
-"modules-left": [
+  "include": "/home/alistar/.config/omarchy/themes/monarch/.config/waybar/modules",
+  "layer": "top",
+  "position": "top",
+  "height": 12,
+  "margin-left": 10,
+  "margin-right": 10,
+  "margin-top": 2,
+
+  "modules-left": [
     "custom/clock",
     "custom/separator#blank",
     "mpris",
     "hyprland/window"
-],
+  ],
 
-"modules-center": [
-    "hyprland/workspaces"
-],
-		
-"modules-right": [
-	"tray",
-	"custom/separator#line",
-	"cpu",
+  "modules-center": ["hyprland/workspaces"],
+
+  "modules-right": [
+    "tray",
+    "custom/separator#blank_2",
+    "cpu",
     "memory",
     "network",
     "bluetooth",
-	"backlight",
-	"custom/separator#line",
-	"pulseaudio",
-	"pulseaudio#microphone",
-	"battery",
-	"custom/separator#line",
-	"idle_inhibitor",
-	"custom/power",
-	],
+    "backlight",
+    "custom/separator#blank_2",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "battery",
+    "custom/separator#blank_2",
+    "idle_inhibitor",
+    "custom/power"
+  ],
 
+  // Additional format / customize modules
 
-// Additional format / customize modules
+  "custom/power": {
+    "format": " ",
+    "icon-size": 20,
+    "on-click": "omarchy-menu system",
+    "tooltip": false
+  },
 
-"custom/power": {
-	"format": " ",
-	"icon-size": 20,
-  "on-click": "omarchy-menu system",
-	"tooltip": false,
-},
-	
-"custom/clock": {
-  "return-type": "json",
-  "format": "{}",
-  "interval": 60,
-  "signal": 8,
-  "exec": "bash /home/alistar/.config/omarchy/themes/monarch/.config/waybar/scripts/clock_tz.sh print",
-  "on-click-right": "bash /home/alistar/.config/omarchy/themes/monarch/.config/waybar/scripts/clock_tz.sh toggle",
-  "tooltip": false
-},
-
-
+  "custom/clock": {
+    "return-type": "json",
+    "format": "{}",
+    "interval": 60,
+    "signal": 8,
+    "exec": "bash /home/alistar/.config/omarchy/themes/monarch/.config/waybar/scripts/clock_tz.sh print",
+    "on-click-right": "bash /home/alistar/.config/omarchy/themes/monarch/.config/waybar/scripts/clock_tz.sh toggle",
+    "tooltip": false
+  }
 }

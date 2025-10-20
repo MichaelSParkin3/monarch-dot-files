@@ -651,13 +651,13 @@
 },
 
 "custom/separator#blank_2": {
-	"format": "  ",
+	"format": " ",
     "interval": "once",
     "tooltip": false
 },
 
 "custom/separator#blank_3": {
-	"format": "   ",
+	"format": "  ",
     "interval": "once",
     "tooltip": false
 },
