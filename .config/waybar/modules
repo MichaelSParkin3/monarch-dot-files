@@ -92,13 +92,19 @@
       "class<soffice>": "\uf1c1",
 
       // --- System Tools & Games ---
-      "class<btop>": "\ue621",
+      "class<btop>": "\uf4bc",
       "class<htop>": "\ue621",
       "class<gnome-system-monitor>": "\ue621",
       "class<pavucontrol>": "\uf028",
       "class<blueman-manager>": "\ue707",
+      "class<Impala>": "\udb82\udd28",
+      "class<Wiremix>": "\ue638",
+      "class<Wiremix-Input>": "\ue638",
+      "class<blueberry.py>": "\uf293",
+      "class<nordvpn-gui>": "\udb81\udc83",
       "class<steam>": "\udb81\udcd3",
       "class<net.lutris.Lutris>": "\udb80\ude96",
+      "class<gamescope>": "\uf11b",
       "class<gamescope.Gamescope>": "\uf11b",
       "class<timeshift-gtk>": "\udb85\udc42",
 
