@@ -2,7 +2,7 @@
 // Sleek
 
 {
-  "include": "/home/alistar/.config/omarchy/themes/monarch/waybar/modules",
+  "include": "/home/alistar/.config/omarchy/themes/monarch/.config/waybar/modules",
   "layer": "top",
   "position": "top",
   "height": 12,
@@ -11,6 +11,7 @@
   "margin-top": 2,
 
   "modules-left": [
+    "custom/screenrecording-indicator",
     "custom/clock",
     "custom/separator#blank",
     "mpris",
@@ -33,6 +34,7 @@
     "battery",
     "custom/separator#blank_2",
     "idle_inhibitor",
+    "custom/update",
     "custom/power"
   ],
 

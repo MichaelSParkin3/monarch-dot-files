@@ -118,6 +118,7 @@
 
       // --- Web Apps (Brave PWAs) ---
       "class<brave-grok.com__-Default>": "\udb82\udf79",
+      "class<brave-chatgpt.com__-Default>": "\udb85\udf38",
       "class<brave-chat.openai.com__-Default>": "\uf544",
       "class<brave-web.whatsapp.com__-Default>": "\uf232",
       "class<brave-youtube.com__-Default>": "\uf16a",
@@ -601,6 +602,22 @@
 	"on-click": "omarchy-menu system",
     "interval" : 86400, // once every day
     "tooltip": true,
+},
+
+"custom/update": {
+    "format": "",
+    "exec": "omarchy-update-available",
+    "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
+    "tooltip-format": "Omarchy update available",
+    "signal": 7,
+    "interval": 3600
+},
+
+"custom/screenrecording-indicator": {
+    "on-click": "omarchy-cmd-screenrecord",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
+    "signal": 8,
+    "return-type": "json"
 },
 
 // NOTE:! This is only for Arch and Arch Based Distros

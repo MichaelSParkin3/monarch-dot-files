@@ -153,7 +153,9 @@ window#waybar.hidden {
 #custom-weather.severe,
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
-#custom-weather.sunnyDay {
+#custom-weather.sunnyDay,
+#custom-update,
+#custom-screenrecording-indicator {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-right: 6px;
@@ -277,6 +279,18 @@ window#waybar.hidden {
 }
 
 #custom-updater {
+  color: @error;
+}
+
+#custom-update {
+  color: @error;
+}
+
+#custom-screenrecording-indicator {
+  color: @text;
+}
+
+#custom-screenrecording-indicator.active {
   color: @error;
 }
 
