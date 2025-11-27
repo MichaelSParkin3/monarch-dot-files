@@ -83,6 +83,7 @@
       "class<gimp>": "\uf1c5",
       "class<audacity>": "\uf025",
       "class<blender>": "\ue7ad",
+      "class<Godot>": "\ue7ee",
 
       // --- Office Suite ---
       "class<libreoffice>": "\uf1c1",
