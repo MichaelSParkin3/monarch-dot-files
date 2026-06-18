@@ -1,1 +1,1 @@
-.config/nvim/colors/monarch.lua
+/home/alistar/.config/omarchy/themes/monarch/.config/nvim/colors/monarch.lua
